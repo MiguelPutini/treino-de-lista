@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let v = [10, 20, 30, 40];
+        let valor = 25;
+        let posicao = 0;
+
+        v.push(0);
+        console.log(v);
+        for (let i = v.length - 1; i > posicao; i--) {
+            v[i] = v[i - 1];
+            console.log("vetor na " + (v.length-i) + "ª passagem " + v);
+        }
+
+        v[posicao] = valor;
+        console.log(v);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
